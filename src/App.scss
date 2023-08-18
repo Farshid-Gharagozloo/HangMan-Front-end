@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgrey;
+
+  *,
+  button,
+  input {
+    outline: 0;
+    font-family: Roboto;
+  }
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+}
