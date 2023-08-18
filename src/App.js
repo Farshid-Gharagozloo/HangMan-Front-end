@@ -4,6 +4,8 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Topnav from "./components/Topnav/Topnav";
 
+import HomePage from "./pages/HomePage/HomePage";
+
 
 function App() {
   const [name, setName] = useState(null);
@@ -23,6 +25,10 @@ function App() {
     <HashRouter>
       <Topnav name={name} />
       <Routes>
+        <Route path='/' 
+          element={<HomePage name={name} setName={setName} /> }
+        />
+        
       </Routes>
       <Footer/>
     </HashRouter>
