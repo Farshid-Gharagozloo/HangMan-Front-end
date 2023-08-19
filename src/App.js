@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Topnav from "./components/Topnav/Topnav";
 
 import HomePage from "./pages/HomePage/HomePage";
+import PlayPage from "./pages/PlayPage/PlayPage";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
         <Route path='/' 
           element={<HomePage name={name} setName={setName} /> }
         />
-        
+        <Route path="/play" element={<PlayPage />} />
       </Routes>
       <Footer/>
     </HashRouter>

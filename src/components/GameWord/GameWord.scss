@@ -1,0 +1,14 @@
+.game-word {
+  margin: 0 auto 1rem;
+  display: flex;
+  justify-content: space-around;
+
+  &__letter {
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
