@@ -6,6 +6,7 @@ import Topnav from "./components/Topnav/Topnav";
 
 import HomePage from "./pages/HomePage/HomePage";
 import PlayPage from "./pages/PlayPage/PlayPage";
+import UploadPage from "./pages/UploadPage/UploadPage";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           element={<HomePage name={name} setName={setName} /> }
         />
         <Route path="/play" element={<PlayPage />} />
+        <Route path="/upload" element={<UploadPage/>}/>
       </Routes>
       <Footer/>
     </HashRouter>

@@ -1,0 +1,75 @@
+
+
+// .form {
+//     margin: 2rem 5rem;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+
+//     &-word {
+//         margin: 2rem;
+//         color: darkgoldenrod;
+
+//         &__label {
+//             font-size: 2rem;
+//             margin: 0 2rem;
+//         }
+
+//         &__input{
+//             height: 2rem;
+//             padding: 1rem;
+//             border-radius: 4px;
+//         }
+//     }
+// }
+
+.form {
+    width: 50%;
+    min-height: 65vh;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &__card {
+      height: 100%;
+      background-color: white;
+      box-shadow: 1px 1px 5px 0px gold;
+      border: 1px solid goldenrod;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+
+
+      &-title {
+        text-align: center;
+        color: goldenrod;
+        font-size: 2rem;
+        margin: 1rem 2rem;
+      }
+  
+      &-field {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid darkgrey;
+        font-size: 1.5rem;
+        margin: 0 0 2rem;
+        padding: 0.1rem;
+      }
+  
+      &-button {
+        color: goldenrod;
+        background-color: gold;
+        border: 1px solid;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  
