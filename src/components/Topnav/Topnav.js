@@ -10,7 +10,7 @@ function Topnav({ name }) {
           Hang Man
         </Link>
         <Link to="/upload">
-          <button className="upload-button">You can add your word!!</button>
+          <button className="topnav__upload-button">You can add your word!!</button>
         </Link>
         <div className="topnav__name">👤 {name} </div>
       </section>

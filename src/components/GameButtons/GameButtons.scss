@@ -1,10 +1,14 @@
 .game-buttons {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 
   &__letter {
     text-transform: uppercase;

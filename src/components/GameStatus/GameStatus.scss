@@ -1,6 +1,7 @@
 .game-status {
   margin: 1rem auto;
   padding: 1rem;
+  min-width: 10rem;
   width: 30%;
   font-size: 2rem;
   border-radius: 1rem;
@@ -39,19 +40,22 @@
   justify-content: center;
 
   &__data {
+
+    margin-top: 1rem;
+    width: 15rem;
+    filter: blur(10px);
+    border: 2px solid black;
+    border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
       margin-top: 1.5rem;
       width: 35rem;
-      // opacity: 10%;
-      filter: blur(10px);
-      border: 2px solid black;
-      border-radius: 5px;
-      // height: 10%;
+    }
   }
 
   &__show {
     margin-top: 1.5rem;
     width: 35rem;
-    // opacity: 100%;
     filter: blur(0);
     border-radius: 5px;
     border: 2px solid red;

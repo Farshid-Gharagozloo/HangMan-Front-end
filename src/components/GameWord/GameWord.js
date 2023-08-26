@@ -7,7 +7,7 @@ function GameWord({ word, guesses, solved }) {
         const value = guesses.includes(letter) || solved ? letter : "";
         if (letter === " "){
           return (
-            <div key={idx}> </div>
+            <div className="game-word__space" key={idx}> </div>
           );
         }
         else {
