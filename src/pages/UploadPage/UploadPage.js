@@ -27,15 +27,15 @@ function UploadPage (){
                 }
         }}>
 
-                <div className="form-word">
-                    <label htmlFor="word" className="form__card-title">Add Word</label>
+                <div className="form__word">
+                    <label htmlFor="word" className="form__card-title">Add Word:</label>
                     <input required type="text" placeholder="write the word" name="word" className="form__card-field"/>
                 </div>
-                <div className="form-image">
+                <div className="form__image">
                     <p className="form__card-title">Please upload your image:</p>                    
-                    <input required type="file" name="image" accept="image/*" className="form__card-field"/>
+                    <input required type="file" name="image" accept="image/*" className="form__card-field form__card-upload-button"/>
                 </div>
-                <button type="submit" className="form__card-button">Add a Word</button>
+                <button type="submit" className="form__card-button">Add your Word</button>
             </form>
         </section>
     );
