@@ -5,7 +5,7 @@ import GameWord from "../../components/GameWord/GameWord";
 import GameStatus from "../../components/GameStatus/GameStatus";
 import GameButtons from "../../components/GameButtons/GameButtons";
 
-function PlayPage({}) {
+function PlayPage() {
   const [word, setWord] = useState([]);
   const [guesses, setGuesses] = useState([]);
   const [remaining, setRemaining] = useState(7);
