@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://hangman-images-f201200758b8.herokuapp.com";
 axios.interceptors.response.use((response) => response.data);
 
 export const getWords = () => axios.get(`/words`);
