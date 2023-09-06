@@ -1,0 +1,76 @@
+.name {
+  width: 50%;
+  min-height: 65vh;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__card {
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 5px 0px gold;
+    border: 1px solid goldenrod;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 1rem;
+
+    &-title {
+      text-align: center;
+      color: goldenrod;
+      font-size: 2rem;
+    }
+
+    &-field {
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      border-bottom: 1px solid darkgrey;
+      font-size: 1.25rem;
+      margin: 0 0 2rem;
+    }
+
+    &-button {
+      color: goldenrod;
+      background-color: gold;
+      border: 1px solid;
+      border-radius: 0.25rem;
+      padding: 1rem;
+      font-size: 1.25rem;
+      cursor: pointer;
+
+      &:active {
+        color: gold;
+        background-color: goldenrod;
+      }
+
+      &--secondary {
+        margin: 1rem 0;
+        color: grey;
+        background-color: lightgrey;
+        &:active {
+          color: lightgray;
+          background-color: grey;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 2rem;
+
+      &-title {
+        font-size: 3rem;  
+      }
+
+      &-field, &-button {
+        font-size: 1.5rem;
+      }
+
+    }
+
+  }
+}

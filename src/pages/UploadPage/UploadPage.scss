@@ -1,0 +1,87 @@
+.form {
+    
+    min-height: 65vh;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  
+    &__card {
+      height: 100%;
+      background-color: white;
+      box-shadow: 1px 1px 5px 0px gold;
+      border: 1px solid goldenrod;
+      border-radius: 0.25rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.75rem;
+      margin: 0 1rem;
+
+
+      &-title {
+        text-align: center;
+        color: goldenrod;
+        font-size: 1.25rem;
+        margin: 1rem 2rem;
+      }
+  
+      &-field {
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+        border-bottom: 1px solid darkgrey;
+        font-size: 1rem;
+        margin: 0 0 2rem;
+        padding: 0.1rem;
+      }
+  
+      &-button {
+        background-color: gold;
+        border: 1px solid goldenrod;
+        border-radius: 0.25rem;
+        padding: 0.75rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+
+      &-upload-button::-webkit-file-upload-button{
+        background-color: gold;
+        border-radius: 0.25rem;
+        border: none;
+        padding: 0.3rem;
+        border: 1px solid goldenrod;
+      }
+
+      &-upload-button{
+        border-bottom:none; 
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 2rem;
+
+        &-button, &-title{
+          font-size: 2rem;
+        }
+
+        &-field {
+          font-size: 1.5rem;
+        }
+
+        &-button {
+          padding: 1.2rem;
+        }
+      }
+    }
+
+    &__image, &__word{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,63 @@
+.game-status {
+  margin: 1rem auto;
+  padding: 1rem;
+  min-width: 10rem;
+  width: 30%;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+
+  &--guesses {
+    color: goldenrod;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid gold;
+  }
+
+  &--won {
+    color: darkgreen;
+    background-color: lightgreen;
+    border: 1px solid green;
+  }
+
+  &--lost {
+    color: darkred;
+    background-color: lightcoral;
+    border: 1px solid red;
+  }
+  button {
+    color: goldenrod;
+    background-color: gold;
+    border: 1px solid;
+    padding: 1rem;
+    margin: 1rem 1rem 0;
+    cursor: pointer;
+  }
+}
+
+.guess_img {
+  display: flex;
+  justify-content: center;
+
+  &__data {
+
+    margin-top: 1rem;
+    width: 15rem;
+    filter: blur(10px);
+    border: 2px solid black;
+    border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 1.5rem;
+      width: 35rem;
+    }
+  }
+
+  &__show {
+    margin-top: 1.5rem;
+    width: 35rem;
+    filter: blur(0);
+    border-radius: 5px;
+    border: 2px solid red;
+  }
+}
